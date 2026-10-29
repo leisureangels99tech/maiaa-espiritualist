@@ -161,6 +161,35 @@ footer .small{font-size:14px;color:#c4a9a6}
 </div>
 </div>
 </section>
+  <style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-top:28px}
+.dep-card{margin:0;display:flex;flex-direction:column;gap:6px;padding:22px 24px 24px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.dep-card::before{content:"\201C";font:600 64px/.8 "Cormorant Garamond",Georgia,serif;color:var(--gold)}
+.dep-card blockquote{margin:0;flex:1;line-height:1.6}
+.dep-card figcaption{margin-top:12px;font-weight:500;font-size:15px;color:var(--gold)}
+.dep-note{max-width:60ch;margin:18px 0 22px;color:var(--muted);font-size:15px}
+@media (max-width:760px){.dep-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:28px -20px 0;padding:0 20px 8px}.dep-card{flex:0 0 84%;scroll-snap-align:center}}
+</style>
+<section id="depoimentos">
+  <div class="wrap">
+    <h2>Depoimentos</h2>
+    <p class="lead">Palavras de quem já passou por aqui. Os nomes foram omitidos para preservar a privacidade.</p>
+    <div class="dep-grid">
+      <figure class="dep-card"><blockquote>Meu amor voltou pra mim recentemente. Voltou totalmente diferente, e já propôs casamento, porque disse que agora viu que eu sou a mulher da vida dele. Eu estou muito feliz!</blockquote><figcaption>Cliente · Amor</figcaption></figure>
+      <figure class="dep-card"><blockquote>Voltamos ontem, ele me procurou pedindo perdão, dizendo que estava muito arrependido. Foi muito rápido, muito obrigada mesmo, você é maravilhosa.</blockquote><figcaption>Cliente · Amor</figcaption></figure>
+      <figure class="dep-card"><blockquote>Ele tava um amor, muito carinhoso, nunca vi ele assim. Mais nossa gratidão!</blockquote><figcaption>Cliente · Amor</figcaption></figure>
+      <figure class="dep-card"><blockquote>Faz nem um mês do trabalho e já consegui emprego, por sinal muito bom. Estão surgindo cada vez mais oportunidades. Realmente você tem um axé diferenciado.</blockquote><figcaption>Cliente · Abertura de caminhos</figcaption></figure>
+      <figure class="dep-card"><blockquote>Ele já me desbloqueou e me mandou mensagem, falando que não consegue nem dormir, nem trabalhar. Foi muito mais rápido do que imaginávamos.</blockquote><figcaption>Cliente · Amor</figcaption></figure>
+      <figure class="dep-card"><blockquote>Gostaria de agradecer, já estou vendo resultados do trabalho. Não achei que seria tão rápido assim. Obrigada!</blockquote><figcaption>Cliente · Trabalho espiritual</figcaption></figure>
+    </div>
+    <p class="dep-note">Mensagens reais de clientes. Cada situação é diferente e nenhum resultado é garantido.</p>
+    <a class="btn wa" href="https://wa.me/553592260172?text=Ol%C3%A1%2C%20Maiaa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar a minha consulta</a>
+  </div>
+</section>
+<script>
+(function(){var a=document.querySelector('nav a[href="#galeria"]');if(a)a.insertAdjacentHTML('afterend','<a href="#depoimentos">Depoimentos</a>');})();
+</script>
+
 
 <section id="horarios" style="background:var(--card)">
 <div class="wrap">
